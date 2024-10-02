@@ -1,0 +1,561 @@
+
+ body {
+     background: #f8f8f2;
+     font-family: "宋体", sans-serif !important;
+     overflow-x: hidden;
+     min-width: 1200px;
+     overflow: scroll;
+ }
+
+ a {
+     text-decoration: none !important;
+     color: black !important;
+ }
+
+ li:hover {
+     background-color: bisque;
+     border-radius: 10px;
+ }
+ 
+ .Top {
+    background-color: #f8f8f8 ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 700;
+}
+.nav-item{
+    margin: 0px 50px ;
+    transition: transform 0.5s; 
+}
+.nav-item:hover {
+    background-color: transparent !important; /* 移除背景色 */
+    color: inherit !important; /* 保持文字颜色不变 */
+    text-decoration: none !important; /* 移除下划线 */
+}
+.nav-item:hover{
+    font-weight: bold;
+    transform:scale(1.2);
+}
+.logoBlank{
+    transition: transform 0.5s; 
+}
+.logoBlank:hover{
+    transform:scale(1.2);
+}
+ .progress{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 5px!important;
+    background-color: #23A8F2 !important;
+    transform-origin: 0 50%;
+  }
+  @keyframes grow-progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  .progress{
+    animation: grow-progress 3s linear;
+  }
+  .progress{
+    animation-timeline: scroll();
+  }
+
+  #contentSeetings{
+    display: flex;
+    justify-content: center;
+    
+  }
+  #content {
+    width: 1000px;
+    display: grid;
+    height: auto;
+    background-color: inherit;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto; /* 将左右边距设置为 auto */
+    text-indent: 2em;
+    border-radius: 5px;
+    line-height: 40px;
+    border: 1px solid grey;
+    padding: 30px;
+    font-size: var(--current-font-size, 16px);
+    line-height: var(--current-line-height, 1.5);
+    font-family: var(--current-font-family, "宋体");
+}
+#novel *{
+    word-wrap: break-word; /* 自动换行 */
+    word-break: break-all; /* 打断长单词 */
+    width: 100%;
+}
+#LinkBar {
+    margin: 0px 0px 50px 0px;
+}
+#LinkBar span {
+    padding-right: 20px;
+}
+
+#LinkBar a:hover{
+    font-weight: bold;
+}
+#linkSpan{
+    margin-left: -30px;
+}
+
+ #novel_chapter {
+     text-align: center;
+     margin: 50px 0px 50px 0px;
+     font-weight: bold;
+     font-size: 2rem;
+ }
+
+ #loader {
+     display: none;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 20px;
+
+ }
+
+ #novel_button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* 水平居中 */
+     align-items: center;
+     /* 垂直居中 */
+     /* border: 1px solid; */
+     height: 200px;
+ }
+
+ #novel_button div {
+     float: left;
+     border: 1px solid;
+     width: 100px;
+     text-align: center;
+     border-radius: 25px;
+     margin-top: 10px;
+     color: #ffffff;
+     padding: 10px !important;
+ }
+
+ #novel_button div:hover {
+     font-weight: bold;
+ }
+
+ #novel_button div>img {
+     margin-top: -2px;
+     margin-left: -35px;
+     margin-right: -5px;
+ }
+
+
+ #reward {
+     background-color: #FF5555;
+ }
+
+ #reward img {
+     margin-top: -5px;
+ }
+
+ #comment {
+     margin-left: 200px;
+     background-color: #FC7F3E;
+ }
+
+
+ #assembly {
+    position: fixed;
+    text-align: center;
+    width: 100px;
+    left: 40px;
+    transition: top 1s ease; /* 添加平滑过渡效果 */
+
+}
+
+
+ #assembly img {
+     margin-top: 2px;
+
+ }
+
+ .btn_menu:focus {
+     outline: none;
+ }
+
+ #assembly div {
+     width: auto;
+     height: auto;
+     margin: 5vh 0px; 
+     border: 1px solid #555;
+     border-radius: 5px;
+ }
+ #settings {
+     overflow: auto;
+     /* 设置的宽度 */
+     width: 650px;
+     height: 350px;
+     display: none;
+     position: fixed;
+     top: 100.5px;
+     left: 12%;
+     border-radius: 5px;
+     background-color: rgba(255, 255, 255, 0.9);
+     /* 白色背景，透明度为0.5 */
+
+ }
+
+ #settings>p {
+     font-size: 25px;
+     margin: 20px 20px 0px 30px;
+     font-weight: bold;
+ }
+
+ #settings_color,
+ #settings_row_height,
+ #settings_text,
+ #settings_font_style {
+     width: 100%;
+     display: inline-block;
+     height: auto;
+     line-height: 60px;
+     border-radius: 50px;
+ }
+
+ #settings_color,
+ #settings_row_height,
+ #settings_text,
+ #settings_font_style span {
+     color: #9A9A9A;
+ }
+#speedSelector{
+border: none;
+}
+
+ .form-check {
+     float: left;
+     margin: 8px;
+     margin-top: 10px;
+ }
+
+ .form-check input {
+     width: 50px;
+     height: 50px;
+ }
+
+ #formWidth input {
+     width: 60px;
+ }
+
+ #flexRadioDefault1 {
+     /* background-color: #E0E0E0; */
+ }
+
+ #flexRadioDefault2 {
+     background-color: #CFD9E0;
+ }
+
+ #flexRadioDefault3 {
+     background-color: #E3D9BC;
+ }
+
+ #flexRadioDefault4 {
+     background-color: #DDEBD6;
+ }
+
+ #flexRadioDefault5 {
+     background-color: #F3D8D8;
+ }
+
+ #flexRadioDefault6 {
+     background-color: #242121;
+ }
+
+ #flexRadioDefault7 {
+     background-color: #ffffff;
+ }
+
+ #settings_text>div>input {
+     background: none;
+     line-height: 40px;
+     height: 40px;
+     margin-right: -4px;
+ }
+
+ #size {
+     width: 70px;
+     border: none;
+ }
+
+ #min_size {
+     border-radius: 5px;
+     border: 1px solid #DDDDDD;
+ }
+
+ #max_size {
+     border-radius: 5px;
+     border: 1px solid #DDDDDD;
+ }
+
+ #min_size,
+ #max_size {
+     width: 60px;
+ }
+
+ #min_size:hover,
+ #max_size:hover {
+     color: #4D85FF;
+ }
+
+ #settings_row_height>div>input {
+     background: none;
+     line-height: 40px;
+     height: 40px;
+     margin-right: -4px;
+ }
+
+ #height {
+     width: 70px;
+     border: none;
+ }
+
+ #min_height {
+     border-radius: 5px;
+     border: 1px solid #DDDDDD;
+ }
+
+ #max_height {
+     border-radius: 5px;
+     border: 1px solid #DDDDDD;
+ }
+
+ #min_height,
+ #max_height {
+     width: 60px;
+ }
+
+ #min_height:hover,
+ #max_height:hover {
+     color: #4D85FF;
+ }
+
+
+ #settings_font_style>div>button {
+     background: none;
+     line-height: 40px;
+     height: 40px;
+     width: 60px;
+     margin-right: 35px;
+     border-radius: 5px;
+     margin-top: 10px;
+ }
+
+ .form-check-input {
+     margin-top: 10px;
+ }
+
+ #font:hover {
+     color: #4D85FF;
+ }
+
+ #novel_name {
+     margin-top: 10px;
+ }
+
+ #novel_Author,
+ #Time {
+     margin-left: 10px;
+     margin-top: -20px;
+     font-size: 15px;
+ }
+ #novel_Author{
+    margin-top: -5px;
+}
+#Time{
+    margin-bottom: -25px;
+}
+#ChapterMenu *{
+    color: red;
+}
+ /* 章节 */
+ #menu_chapter div {
+     width: 100%;
+     height: auto;
+     line-height: 50px;
+ }
+
+ #menu_chapter div:hover {
+     border-radius: 5px;
+     background-color: #f8f8f8;
+ }
+
+ #menu_chapter div>a>p {
+     margin: 10px;
+ }
+
+ #illustration {
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+ }
+
+ #illustration img {
+     width: 76%;
+     height: 300px;
+     /* margin-left: 6%; */
+     object-fit: contain;
+     margin-top: 40px;
+     margin-bottom: -30px;
+ }
+
+ .btn:focus {
+     outline: none !important;
+     box-shadow: none !important;
+ }
+
+ /* 打赏组件 */
+ #moneys {
+     overflow: auto;
+     /* 设置的宽度 */
+     width: 650px;
+     height: 350px;
+     display: none;
+     position: fixed;
+     top: 100.5px;
+     left: 210px;
+     border-radius: 5px;
+     /* 白色背景，透明度为0.5 */
+     background-color: rgba(255, 255, 255, 0.9);
+ }
+
+ #moneysName>p {
+     font-size: 25px;
+     margin: 20px 20px 0px 30px;
+     font-weight: bold;
+ }
+
+ #moneysAuthor>p {
+     margin: 10px 20px 0px 30px;
+ }
+
+ #moneysDiv {
+     width: 100%;
+     height: 100%;
+ }
+
+ #moneysDivs {
+     width: 105px;
+     height: 70px;
+     float: left;
+     margin: 25px 25px 30px 25px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #Divs {
+     height: 30px;
+     position: absolute;
+     margin-top: 90px;
+     font-size: 13px;
+ }
+
+ #Divs input[type="radio"] {
+     display: block;
+     /* 可以根据需要进行调整，使其在父元素中居中 */
+     margin: 0 auto;
+ }
+
+ .new-content {
+     width: 98%;
+     height: 100px;
+     margin-left: 1%;
+     margin-top: 45px;
+ }
+
+ .content>p {
+     position: absolute;
+     right: 1%;
+ }
+
+ #moneyMessage textarea {
+     border-radius: 5px;
+ }
+
+ .moneyMessageButton {
+     width: 100%;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .moneyMessageButton button {
+     /* 清除默认边框 */
+     border: 0;
+     outline: none;
+     /*清除默认背景 */
+     background-color: transparent;
+     width: 150px;
+     height: 100%;
+     background-color: red;
+     color: beige;
+     border-radius: 10px;
+     margin-top: 30px;
+ }
+
+ .moneyMessageButton button:hover {
+     color: black;
+ }
+
+ .moneyMessageText {
+     width: 100%;
+     height: 30px;
+     margin-top: 30px;
+     font-size: 12px;
+     line-height: 30px;
+ }
+
+ .moneyMessageTextRight {
+     position: absolute;
+     right: 1%;
+ }
+
+ #switch {
+    min-width: 40px;
+    position: fixed;
+    left: 90vw;
+    top: 100px;
+}
+
+ #switch img {
+     margin-top: 10px;
+     width: 30px;
+ }
+ #switchTop div,
+ #switchBottom div,
+ #home div{
+     width: 100%;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 15vh 0% 0% 5px;
+ }
+#automaticreduce:hover,
+#automaticAdd:hover{
+    color: red;
+}
+
+#spilt{
+    width: 100%;
+    border-top: 1px solid #f8f8f8; margin-bottom: 5px; margin-top: 5px;
+}
